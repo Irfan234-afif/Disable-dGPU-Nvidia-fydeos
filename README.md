@@ -1,7 +1,7 @@
 
 # How to Disable Nvidia dGPU in FydeOS to clean
 
-leaving the dGPU on is a huge annoyance, as the dGPU drains the battery. on the official FydeOS website, it has been explained how to disable the dGPU but that was not enough for me, because the OS still detects the presence of the dGPU.
+leaving the dGPU on is a huge annoyance, as the dGPU drains the battery. on the official FydeOS website, it has been explained how to disable the dGPU but that was not enough for me, because it only blacklis the kernel modul and OS still detects the presence of the dGPU.
 
 this way i found when understanding how chromeos brunch works disabling dGPU. in brunch there is a patch that runs the command file ```.sh``` when booting and there I found the file ```99-dgpu.sh``` and I applied it to FydeOS manually
 ## Source Code
