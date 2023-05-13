@@ -43,7 +43,7 @@ run this code in your terminal with ```Ctrl + Alt + T``` type ```shell``` then `
 
 run this command
 ```sh
-  $ cat >/roota/lib/udev/rules.d/99-nvidia_pm.rules <<NOUVEAUPM
+  $ cat >/lib/udev/rules.d/99-nvidia_pm.rules <<NOUVEAUPM
   > ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0c0330", ATTR{power/control}="auto", ATTR{remove}="1"
   > ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x0c8000", ATTR{power/control}="auto", ATTR{remove}="1"
   > ACTION=="add", SUBSYSTEM=="pci", ATTR{vendor}=="0x10de", ATTR{class}=="0x040300", ATTR{power/control}="auto", ATTR{remove}="1"
